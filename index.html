@@ -9,120 +9,652 @@
 </head>
 <body>
 
-  <header class="hero">
-    <div class="wrap hero-inner">
-      <div class="avatar">SW</div>
-      <div class="hero-text">
-        <h1>Sam Wang</h1>
-        <p class="title">Computational and Applied Mathematics @ University of Chicago</p>
-        <div class="social-links">
-          <a href="mailto:samwang6@uchicago.edu">✉️ Email</a>
-          <a href="https://www.linkedin.com/in/sam-wang-2b0286283" target="_blank" rel="noopener">in LinkedIn</a>
-          <a href="https://github.com/zlsamwang" target="_blank" rel="noopener">GitHub</a>
+  <div id="site-content">
+
+    <header class="hero">
+      <div class="wrap hero-inner">
+        <div class="avatar"><img src="myphoto.jpg" alt="Zilong (Sam) Wang"></div>
+        <div class="hero-text">
+          <h1>Zilong (Sam) Wang</h1>
+          <p class="title">Computational and Applied Mathematics @ University of Chicago</p>
+          <div class="social-links">
+            <a href="mailto:samwang070106@gmail.com">✉️ Email</a>
+            <a href="https://www.linkedin.com/in/sam-wang-2b0286283" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/zlsamwang" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="section-nav">
+      <div class="wrap">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#honors">Honors</a>
+        <a href="#contact">Contact</a>
+        <button type="button" id="open-world" class="world-link">🌍 My World</button>
+      </div>
+    </nav>
+
+    <main>
+
+      <section id="about" class="about">
+        <div class="wrap">
+          <h2>About Me</h2>
+          <p>
+            I'm a student at the University of Chicago, having previously studied at the University of Illinois
+            Urbana-Champaign, majoring in Computational and Applied Mathematics with a 4.0 GPA. My research spans
+            environmental and hydraulic systems modeling, public health data analysis, and number theory, and I
+            enjoy applying mathematical and statistical methods to real-world, data-rich problems. Outside of
+            research, I build full-stack applications for fun.
+          </p>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="wrap">
+          <h2>Education</h2>
+          <div class="card-list">
+            <div class="card">
+              <div class="card-head">
+                <h3>University of Chicago</h3>
+                <span class="card-meta">06/2026 — Present</span>
+              </div>
+              <p class="card-sub">Chicago, IL · GPA: 4.0 / 4.0</p>
+            </div>
+            <div class="card">
+              <div class="card-head">
+                <h3>University of Illinois Urbana-Champaign</h3>
+                <span class="card-meta">08/2025 — 06/2026</span>
+              </div>
+              <p class="card-sub">Champaign, IL · GPA: 4.0 / 4.0</p>
+              <p class="desc">Coursework: Computer Science I & II, Calculus III, Intro to Higher Math, University Physics: Mechanics, Statistics &amp; Probability I.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <div class="wrap">
+          <h2>Publications</h2>
+          <div class="card-list">
+            <div class="card">
+              <div class="card-head">
+                <h3><a href="https://hsetdata.com/index.php/ojs/article/view/753" target="_blank" rel="noopener">An Analysis of Approaches to Goldbach's and De Polignac's Conjectures and Their Interconnections</a></h3>
+                <span class="card-meta">2025</span>
+              </div>
+              <p class="card-sub">Zilong Wang · Highlights in Science, Engineering and Technology, Vol. 140 · 3rd International Conference on Algorithms, Mathematical Modeling and Machinery Processing (AMMMP 2025)</p>
+              <p class="desc">Reviews the major analytical approaches to Goldbach's and de Polignac's conjectures, including Chen's theorem, the Hardy–Littlewood Circle Method, and the GPY sieve for bounded prime gaps. Critically shows a 2014 purported proof of de Polignac's conjecture to be logically unsound, and computationally verifies both conjectures for even integers up to 10,000.</p>
+            </div>
+            <div class="card">
+              <div class="card-head">
+                <h3><a href="https://www.researchgate.net/publication/383467654_Correlation_between_fishing_yield_and_microplastic_levels_across_nations" target="_blank" rel="noopener">Correlation Between Fishing Yield and Microplastic Levels Across Nations</a></h3>
+                <span class="card-meta">2024</span>
+              </div>
+              <p class="card-sub">Zilong Wang · Proceedings of the 2nd International Conference on Mathematical Physics and Computational Simulation</p>
+              <p class="desc">Used a mixed-effect model (with ReML estimation) on data from 100 nations spanning 1990–2021 to show that a one-piece-per-cubic-meter increase in microplastic levels corresponds to a 65–100 metric tonne decline in fishing yield (95% CI), a relationship consistent across ~93% of coastal nations studied.</p>
+            </div>
+            <div class="card">
+              <div class="card-head">
+                <h3><a href="https://doi.org/10.54254/2753-8818/34/20240761" target="_blank" rel="noopener">Reproduction of Two Studies Discussing Bias: Jury Selection Bias and Diving2000 Findings</a></h3>
+                <span class="card-meta">2024</span>
+              </div>
+              <p class="card-sub">Jiaqi Guo, Yunhao Mai, Chen Wang, Chentong Hao, Zilong Wang (co-first authors) · Proceedings of the 3rd International Conference on Computing Innovation and Applied Physics</p>
+              <p class="desc">Reproduced two influential studies using t-tests and permutation tests: found no statistically significant evidence of bias against education in jury selection, but confirmed nationalistic judging bias among several judges in the 2000 Olympic diving competition.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="wrap">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="card">
+              <div class="card-head">
+                <h3>World Cup Fantasy Web Application</h3>
+              </div>
+              <p class="desc">
+                A full-stack fantasy sports application enabling users to build 15-player squads under budget,
+                position, and national-team constraints, with validation logic for roster composition, lineups,
+                captain selection, and relational entities for users, players, matches, leagues, and scoring.
+              </p>
+              <div class="tag-list">
+                <span class="tag tag-status">In Progress</span>
+                <span class="tag">Full-Stack</span>
+                <span class="tag">Independent Project</span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-head">
+                <h3>Sri Lanka Tank Cascade Model</h3>
+              </div>
+              <p class="desc">
+                A computational modeling project on Sri Lanka's traditional cascading tank irrigation systems,
+                analyzing real datasets to quantify surface–groundwater interaction.
+              </p>
+              <div class="tag-list">
+                <span class="tag tag-status">In Progress</span>
+                <span class="tag">Computational Modeling</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="honors">
+        <div class="wrap">
+          <h2>Honors &amp; Awards</h2>
+          <ul class="honor-list">
+            <li><strong>AMC 12A (2023)</strong> — Honor Roll of Distinction, top 1%</li>
+            <li><strong>ARML Local (2024)</strong> — National Gold, Global Top 100 Teams (7th)</li>
+            <li><strong>Sandia Data Challenge (2025)</strong> — Top 10 of 45+ teams</li>
+            <li><strong>Harvard International Review (2024)</strong> — Silver Award &amp; Outstanding Writing Style</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="contact">
+      <div class="wrap">
+        <p>&copy; 2026 Zilong (Sam) Wang</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="my-world-view" hidden>
+    <div class="world-topbar">
+      <button type="button" id="close-world" class="back-link">← Back to site</button>
+      <h2>My World</h2>
+      <p class="map-hint">Walk up to a floating block (WASD / arrows / pad), then press <strong>E</strong> to open it. Drag with the mouse to look around, scroll to zoom.</p>
+    </div>
+
+    <div class="world-scene-wrap">
+      <div id="world-canvas">
+        <div class="exp-prompt" id="exp-prompt">Press <strong>E</strong></div>
+
+        <div class="exp-side-panel" id="exp-side-panel">
+          <div class="panel-card">
+            <button type="button" class="side-close" id="side-close" aria-label="Close">✕</button>
+            <div class="card-head">
+              <h3 id="side-title"></h3>
+              <span class="card-meta" id="side-meta"></span>
+            </div>
+            <p class="card-sub" id="side-sub"></p>
+            <p class="desc" id="side-desc"></p>
+          </div>
         </div>
       </div>
     </div>
-  </header>
 
-  <nav class="section-nav">
-    <div class="wrap">
-      <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <div class="dpad">
+      <button type="button" class="dpad-btn dpad-up" data-dir="up" aria-label="Move forward">▲</button>
+      <div class="dpad-row">
+        <button type="button" class="dpad-btn dpad-left" data-dir="left" aria-label="Move left">◀</button>
+        <button type="button" class="dpad-btn dpad-down" data-dir="down" aria-label="Move backward">▼</button>
+        <button type="button" class="dpad-btn dpad-right" data-dir="right" aria-label="Move right">▶</button>
+      </div>
+      <button type="button" id="exp-interact" class="interact-btn">Interact (E)</button>
     </div>
-  </nav>
+  </div>
 
-  <main>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script>
+    const siteContent = document.getElementById("site-content");
+    const worldView = document.getElementById("my-world-view");
+    const prompt = document.getElementById("exp-prompt");
+    const sidePanel = document.getElementById("exp-side-panel");
+    const sideTitle = document.getElementById("side-title");
+    const sideMeta = document.getElementById("side-meta");
+    const sideSub = document.getElementById("side-sub");
+    const sideDesc = document.getElementById("side-desc");
 
-    <section id="about" class="about">
-      <div class="wrap">
-        <h2>About Me</h2>
-        <p>
-          I am an undergraduate studying Computational and Applied Mathematics at the University of Chicago.
-          My interests span data analysis, artificial intelligence, and computational modeling — I enjoy
-          applying mathematical and statistical methods to understand complex real-world systems.
-        </p>
-      </div>
-    </section>
+    const experiences = [
+      {
+        title: "Hydraulic Engineering Department Intern",
+        meta: "07/2024 — 08/2024",
+        sub: "Nanjing Hydraulic Research Institute · Nanjing, Jiangsu",
+        desc: "Contributed to a Digital Twin project for hydraulic management, analyzing precipitation datasets with Python, dBeaver, and pgAdmin, and building precipitation forecasts via triangular mesh modeling. Improved forecasting code efficiency with linear interpolation, cutting runtime from 3 minutes to 30 seconds."
+      },
+      {
+        title: "Research Assistant",
+        meta: "08/2025 — Present",
+        sub: "Department of Civil and Environmental Engineering, UIUC · Champaign, IL",
+        desc: "Working with Prof. Murugesu Sivapalan to reproduce results from the Wonderland Model, a systems-dynamics framework for projecting future environmental trajectories, and developing quantitative models of surface–groundwater interaction for a Sri Lanka case study."
+      },
+      {
+        title: "Research Assistant",
+        meta: "09/2025 — 07/2026",
+        sub: "Healthy Regions & Policies Lab, UIUC · Champaign, IL",
+        desc: "Supporting the Localize Opioid Use Disorder (LOUD) study led by Prof. Marynia Kolak (Dept. of Geography & GIS): literature review on medication access for those impacted by the opioid epidemic, and data analysis using dplyr and gtsummary in R."
+      },
+      {
+        title: "Ross Mathematics Program",
+        meta: "06/2024 — 07/2024",
+        sub: "Terre Haute, IN",
+        desc: "Completed a six-week intensive program in number theory, including proofs of Quadratic Reciprocity, and attended advanced seminars on p-adic analysis, translation surfaces, and Lean theorem proving."
+      }
+    ];
 
-    <section id="publications">
-      <div class="wrap">
-        <h2>Publications</h2>
-        <div class="card-list">
-          <div class="card">
-            <div class="card-head">
-              <h3>Paper Title Placeholder</h3>
-              <span class="card-meta">2025</span>
-            </div>
-            <p class="card-sub">Author list · Published in Journal/Conference Name</p>
-            <p class="desc">A brief description of the paper's research and contributions.</p>
-            <p class="placeholder-note">Placeholder — replace with actual publication</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    const blockPositions = [
+      { x: -13, y: 2.1, z: -4 },
+      { x: -4, y: 3.1, z: -13 },
+      { x: 5, y: 2.1, z: -4 },
+      { x: 14, y: 2.6, z: -8 }
+    ];
 
-    <section id="experience">
-      <div class="wrap">
-        <h2>Work Experience</h2>
-        <div class="card-list">
-          <div class="card">
-            <div class="card-head">
-              <h3>Job Title Placeholder</h3>
-              <span class="card-meta">2025 — Present</span>
-            </div>
-            <p class="card-sub">Company / Organization · Location</p>
-            <p class="desc">A brief description of the role and key achievements.</p>
-            <p class="placeholder-note">Placeholder — replace with actual experience</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    let scene, camera, renderer, controls, player, clock, animId;
+    let blockMeshes = [];
+    const keyState = { up: false, down: false, left: false, right: false };
+    let facingAngle = 0;
+    let nearIdx = -1;
+    let openIdx = -1;
+    const INTERACT_RANGE = 2.4;
 
-    <section id="projects">
-      <div class="wrap">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="card">
-            <div class="card-head">
-              <h3>Sri Lanka Tank Cascade Model</h3>
-            </div>
-            <p class="desc">
-              A computational modeling project on Sri Lanka's traditional cascading tank irrigation systems.
-            </p>
-            <div class="tag-list">
-              <span class="tag">Computational Modeling</span>
-              <span class="tag">Data Analysis</span>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-head">
-              <h3>Project Title Placeholder</h3>
-            </div>
-            <p class="desc">A short project description covering the goal, approach, and results.</p>
-            <div class="tag-list">
-              <span class="tag">Tag</span>
-            </div>
-            <p class="placeholder-note">Placeholder — replace with actual project</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    function openPanel(idx) {
+      const e = experiences[idx];
+      sideTitle.textContent = e.title;
+      sideMeta.textContent = e.meta;
+      sideSub.textContent = e.sub;
+      sideDesc.textContent = e.desc;
+      sidePanel.classList.add("open");
+      openIdx = idx;
+      blockMeshes.forEach(function (b) {
+        b.box.material.emissive = new THREE.Color(b.idx === idx ? 0x144a7a : 0x000000);
+      });
+    }
 
-  </main>
+    function closePanel() {
+      sidePanel.classList.remove("open");
+      openIdx = -1;
+      blockMeshes.forEach(function (b) {
+        b.box.material.emissive = new THREE.Color(0x000000);
+      });
+    }
 
-  <footer id="contact">
-    <div class="wrap">
-      <div class="social-links">
-        <a href="mailto:samwang6@uchicago.edu">Email</a>
-        <a href="https://www.linkedin.com/in/sam-wang-2b0286283" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/zlsamwang" target="_blank" rel="noopener">GitHub</a>
-      </div>
-      <p>&copy; 2026 Sam Wang</p>
-    </div>
-  </footer>
+    function interact() {
+      if (nearIdx === -1) return;
+      if (openIdx === nearIdx) {
+        closePanel();
+      } else {
+        openPanel(nearIdx);
+      }
+    }
+
+    function updatePrompt() {
+      if (nearIdx === -1) {
+        prompt.classList.remove("visible");
+        return;
+      }
+      const container = document.getElementById("world-canvas");
+      const pos = blockMeshes[nearIdx].group.position.clone();
+      pos.y += 1.7;
+      pos.project(camera);
+      const x = (pos.x * 0.5 + 0.5) * container.clientWidth;
+      const y = (1 - (pos.y * 0.5 + 0.5)) * container.clientHeight;
+      prompt.style.left = x + "px";
+      prompt.style.top = y + "px";
+      prompt.classList.add("visible");
+    }
+
+    function makeNumberSprite(text) {
+      const canvas = document.createElement("canvas");
+      canvas.width = 64;
+      canvas.height = 64;
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#ffffff";
+      ctx.beginPath();
+      ctx.arc(32, 32, 30, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#2b6cb0";
+      ctx.font = "bold 34px sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, 32, 34);
+      const texture = new THREE.CanvasTexture(canvas);
+      const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture }));
+      sprite.scale.set(0.85, 0.85, 0.85);
+      return sprite;
+    }
+
+    const textureLoader = new THREE.TextureLoader();
+    const blockLogos = ["Nanjing.png", "Illinois.jpg", "Herop.jpg", "Ross.jpg"];
+
+    function buildBlock(pos, idx) {
+      const group = new THREE.Group();
+      group.position.set(pos.x, pos.y, pos.z);
+
+      const colors = [0x3b82c4, 0x2b6cb0, 0x1e4e7f];
+      const logoFile = blockLogos[idx];
+      const isGlass = !!logoFile;
+      const material = new THREE.MeshStandardMaterial(
+        isGlass
+          ? { color: 0xdceefe, transparent: true, opacity: 0.22, roughness: 0.1, depthWrite: false }
+          : { color: colors[idx % colors.length] }
+      );
+      const box = new THREE.Mesh(new THREE.BoxGeometry(1.7, 1.7, 1.7), material);
+      box.renderOrder = 1;
+      group.add(box);
+
+      const outline = new THREE.LineSegments(
+        new THREE.EdgesGeometry(box.geometry),
+        new THREE.LineBasicMaterial({ color: 0x000000 })
+      );
+      outline.renderOrder = 3;
+      group.add(outline);
+
+      if (isGlass) {
+        const logoSprite = new THREE.Sprite(
+          new THREE.SpriteMaterial({ transparent: true, depthTest: false })
+        );
+        logoSprite.scale.set(1.3, 1.3, 1.3);
+        logoSprite.renderOrder = 2;
+        group.add(logoSprite);
+
+        textureLoader.load(
+          logoFile,
+          function (tex) {
+            logoSprite.material.map = tex;
+            logoSprite.material.needsUpdate = true;
+            const maxDim = 1.3;
+            const aspect = tex.image.width / tex.image.height;
+            if (aspect >= 1) {
+              logoSprite.scale.set(maxDim, maxDim / aspect, 1);
+            } else {
+              logoSprite.scale.set(maxDim * aspect, maxDim, 1);
+            }
+          },
+          undefined,
+          function (err) {
+            console.error("Failed to load " + logoFile, err);
+          }
+        );
+      }
+
+      const label = makeNumberSprite(String(idx + 1));
+      label.position.set(0, 1.5, 0);
+      group.add(label);
+
+      return { group: group, box: box, baseY: pos.y, idx: idx, triggered: false, pulseStart: null };
+    }
+
+    function buildCharacter() {
+      const group = new THREE.Group();
+
+      const torso = new THREE.Mesh(
+        new THREE.BoxGeometry(1, 1.2, 0.7),
+        new THREE.MeshStandardMaterial({ color: 0x2b6cb0 })
+      );
+      torso.position.y = 1.1;
+      group.add(torso);
+
+      const head = new THREE.Mesh(
+        new THREE.SphereGeometry(0.42, 16, 16),
+        new THREE.MeshStandardMaterial({ color: 0xffd8ae })
+      );
+      head.position.y = 2.0;
+      group.add(head);
+
+      const cap = new THREE.Mesh(
+        new THREE.SphereGeometry(0.45, 16, 16, 0, Math.PI * 2, 0, Math.PI / 2),
+        new THREE.MeshStandardMaterial({ color: 0xe05b4c })
+      );
+      cap.position.y = 2.12;
+      group.add(cap);
+
+      const legGeo = new THREE.BoxGeometry(0.35, 0.7, 0.35);
+      const legMat = new THREE.MeshStandardMaterial({ color: 0x2c3e50 });
+      const legL = new THREE.Mesh(legGeo, legMat);
+      legL.position.set(-0.28, 0.35, 0);
+      group.add(legL);
+      const legR = new THREE.Mesh(legGeo, legMat);
+      legR.position.set(0.28, 0.35, 0);
+      group.add(legR);
+
+      group.userData.legL = legL;
+      group.userData.legR = legR;
+      return group;
+    }
+
+    function onWorldResize() {
+      const container = document.getElementById("world-canvas");
+      if (!container || !renderer) return;
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h);
+    }
+
+    function initWorld() {
+      if (renderer) return;
+      const container = document.getElementById("world-canvas");
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xdceefe);
+      scene.fog = new THREE.Fog(0xdceefe, 22, 55);
+
+      camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 200);
+
+      renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(width, height);
+      container.appendChild(renderer.domElement);
+
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.08;
+      controls.enablePan = false;
+      controls.minDistance = 5;
+      controls.maxDistance = 24;
+      controls.maxPolarAngle = Math.PI * 0.58;
+      camera.position.set(0, 7, 17);
+      controls.target.set(0, 1, 8);
+      lastTargetPos.copy(controls.target);
+
+      scene.add(new THREE.HemisphereLight(0xffffff, 0x9fc6e0, 0.95));
+      const dirLight = new THREE.DirectionalLight(0xffffff, 0.6);
+      dirLight.position.set(8, 16, 8);
+      scene.add(dirLight);
+
+      const ground = new THREE.Mesh(
+        new THREE.PlaneGeometry(70, 70),
+        new THREE.MeshStandardMaterial({ color: 0xbfe3cd })
+      );
+      ground.rotation.x = -Math.PI / 2;
+      scene.add(ground);
+
+      const grid = new THREE.GridHelper(70, 28, 0x8fce9e, 0x8fce9e);
+      grid.position.y = 0.01;
+      grid.material.opacity = 0.4;
+      grid.material.transparent = true;
+      scene.add(grid);
+
+      player = buildCharacter();
+      player.position.set(0, 0, 8);
+      scene.add(player);
+
+      blockMeshes = blockPositions.map(function (pos, idx) {
+        return buildBlock(pos, idx);
+      });
+      blockMeshes.forEach(function (b) {
+        scene.add(b.group);
+      });
+
+      window.addEventListener("resize", onWorldResize);
+    }
+
+    function lerpAngle(a, b, t) {
+      let diff = b - a;
+      while (diff > Math.PI) diff -= Math.PI * 2;
+      while (diff < -Math.PI) diff += Math.PI * 2;
+      return a + diff * t;
+    }
+
+    const worldUp = new THREE.Vector3(0, 1, 0);
+    const camForward = new THREE.Vector3();
+    const camRight = new THREE.Vector3();
+    const moveDir = new THREE.Vector3();
+
+    function updatePlayer(dt) {
+      const speed = 7.2;
+      let inputX = 0;
+      let inputZ = 0;
+      if (keyState.up) inputZ -= 1;
+      if (keyState.down) inputZ += 1;
+      if (keyState.left) inputX -= 1;
+      if (keyState.right) inputX += 1;
+
+      if (inputX !== 0 || inputZ !== 0) {
+        const len = Math.hypot(inputX, inputZ);
+        inputX /= len;
+        inputZ /= len;
+
+        camera.getWorldDirection(camForward);
+        camForward.y = 0;
+        camForward.normalize();
+        camRight.crossVectors(camForward, worldUp).normalize();
+
+        moveDir.set(0, 0, 0);
+        moveDir.addScaledVector(camForward, -inputZ);
+        moveDir.addScaledVector(camRight, inputX);
+        moveDir.normalize();
+
+        player.position.x = Math.max(-25, Math.min(25, player.position.x + moveDir.x * speed * dt));
+        player.position.z = Math.max(-25, Math.min(25, player.position.z + moveDir.z * speed * dt));
+        facingAngle = lerpAngle(facingAngle, Math.atan2(moveDir.x, moveDir.z), 0.25);
+        player.rotation.y = facingAngle;
+        const t = performance.now() / 110;
+        player.userData.legL.rotation.x = Math.sin(t) * 0.6;
+        player.userData.legR.rotation.x = -Math.sin(t) * 0.6;
+      } else {
+        player.userData.legL.rotation.x = 0;
+        player.userData.legR.rotation.x = 0;
+      }
+    }
+
+    function updateBlocks(dt) {
+      const time = performance.now() / 1000;
+      blockMeshes.forEach(function (b) {
+        b.group.position.y = b.baseY + Math.sin(time * 1.4 + b.idx) * 0.15;
+        b.box.rotation.y += dt * 0.6;
+
+        let scale = 1;
+        if (b.pulseStart !== null) {
+          const elapsed = performance.now() - b.pulseStart;
+          if (elapsed < 300) {
+            scale = 1 + 0.25 * Math.sin((elapsed / 300) * Math.PI);
+          } else {
+            b.pulseStart = null;
+          }
+        }
+        b.group.scale.set(scale, scale, scale);
+
+        const dist = Math.hypot(player.position.x - b.group.position.x, player.position.z - b.group.position.z);
+        if (dist < INTERACT_RANGE) {
+          if (!b.triggered) {
+            b.triggered = true;
+            b.pulseStart = performance.now();
+          }
+          nearIdx = b.idx;
+        } else {
+          b.triggered = false;
+          if (nearIdx === b.idx) nearIdx = -1;
+        }
+      });
+    }
+
+    const lastTargetPos = new THREE.Vector3();
+    const newTargetPos = new THREE.Vector3();
+    const targetDelta = new THREE.Vector3();
+
+    function updateCamera() {
+      newTargetPos.set(player.position.x, player.position.y + 1, player.position.z);
+      targetDelta.subVectors(newTargetPos, lastTargetPos);
+      camera.position.add(targetDelta);
+      controls.target.copy(newTargetPos);
+      lastTargetPos.copy(newTargetPos);
+      controls.update();
+    }
+
+    function startLoop() {
+      if (!clock) clock = new THREE.Clock();
+      clock.getDelta();
+      function tick() {
+        animId = requestAnimationFrame(tick);
+        const dt = Math.min(clock.getDelta(), 0.05);
+        updatePlayer(dt);
+        updateBlocks(dt);
+        updateCamera();
+        updatePrompt();
+        renderer.render(scene, camera);
+      }
+      tick();
+    }
+
+    function stopLoop() {
+      if (animId) cancelAnimationFrame(animId);
+      animId = null;
+    }
+
+    document.getElementById("open-world").addEventListener("click", function () {
+      siteContent.hidden = true;
+      worldView.hidden = false;
+      window.scrollTo(0, 0);
+      initWorld();
+      onWorldResize();
+      startLoop();
+    });
+
+    document.getElementById("close-world").addEventListener("click", function () {
+      worldView.hidden = true;
+      siteContent.hidden = false;
+      stopLoop();
+    });
+
+    window.addEventListener("keydown", function (e) {
+      if (worldView.hidden) return;
+      const k = e.key.toLowerCase();
+      if (k === "arrowup" || k === "w") { keyState.up = true; e.preventDefault(); }
+      else if (k === "arrowdown" || k === "s") { keyState.down = true; e.preventDefault(); }
+      else if (k === "arrowleft" || k === "a") { keyState.left = true; e.preventDefault(); }
+      else if (k === "arrowright" || k === "d") { keyState.right = true; e.preventDefault(); }
+      else if (k === "e") { e.preventDefault(); interact(); }
+      else if (k === "escape") { closePanel(); }
+    });
+
+    window.addEventListener("keyup", function (e) {
+      const k = e.key.toLowerCase();
+      if (k === "arrowup" || k === "w") keyState.up = false;
+      else if (k === "arrowdown" || k === "s") keyState.down = false;
+      else if (k === "arrowleft" || k === "a") keyState.left = false;
+      else if (k === "arrowright" || k === "d") keyState.right = false;
+    });
+
+    document.querySelectorAll(".dpad-btn").forEach(function (btn) {
+      const dir = btn.dataset.dir;
+      btn.addEventListener("pointerdown", function (e) {
+        e.preventDefault();
+        keyState[dir] = true;
+      });
+      ["pointerup", "pointerleave", "pointercancel"].forEach(function (evt) {
+        btn.addEventListener(evt, function () {
+          keyState[dir] = false;
+        });
+      });
+    });
+
+    document.getElementById("exp-interact").addEventListener("click", interact);
+    document.getElementById("side-close").addEventListener("click", closePanel);
+  </script>
 
 </body>
 </html>
