@@ -487,6 +487,55 @@ section h2::before {
   background: var(--blue-100);
 }
 
+/* Games */
+.games-intro {
+  margin: -14px 0 20px;
+  color: var(--ink-soft);
+}
+
+.game-parallelogram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.parallelo-row {
+  display: flex;
+  gap: 14px;
+}
+
+.parallelo-top {
+  transform: translateX(-65px);
+}
+
+.parallelo-bottom {
+  transform: translateX(65px);
+}
+
+.game-tile {
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  transition: transform 0.15s ease;
+}
+
+.game-tile:hover {
+  transform: scale(1.05);
+}
+
+.game-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* Honors */
 .honor-list {
   list-style: none;
